@@ -1,1 +1,3 @@
-console.log("Hey there! i am Js")
+const math = require('./math')
+
+console.log(math);

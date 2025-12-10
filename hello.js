@@ -1,3 +1,3 @@
-const math = require('./math')
+const math = require("./math")
 
-console.log(math);
+console.log("Math Value is ", math(2, 4));

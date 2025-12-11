@@ -1,3 +1,12 @@
 const fs = require("fs")
 
-fs.writeFileSync("./test.txt","Hey There")
+//Sync...
+//fs.writeFileSync("./test.txt","Hey There")
+
+
+// Async
+// fs.writeFile("./test.txt","Hello World",
+//     (err) => {}
+// )
+
+

@@ -1,4 +1,5 @@
 const fs = require("fs")
+const os = re
 
 // Sync... Blocking
 // fs.writeFileSync("./test.txt","Hey There")
@@ -8,12 +9,14 @@ const fs = require("fs")
 // console.log(result)
 // console.log("2")
 
-// non blocking
-
-
-
-
-
+// Async... non blocking
+console.log("1")
+const result = fs.readFile("contacts.txt", "utf-8", 
+    (err,result) => {
+        console.log(result)
+    }
+)
+console.log("2")
 
 // Async Non-blocking
 // fs.writeFile("./test.txt","Hello World",

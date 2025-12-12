@@ -1,24 +1,24 @@
 const fs = require("fs")
-const os = require("os")
+// const os = require("os")
 
-console.log(os.cpus().length);
+// console.log(os.cpus().length);
 
-// Sync... Blocking
-// fs.writeFileSync("./test.txt","Hey There")
+//Sync... Blocking
+fs.writeFileSync("./test.txt","Hey There")
 
 // console.log("1")
 // const result = fs.readFileSync("contacts.txt","utf-8")
 // console.log(result)
 // console.log("2")
 
-// Async... non blocking
-// console.log("1")
-// const result = fs.readFile("contacts.txt", "utf-8", 
-//     (err,result) => {
-//         console.log(result)
-//     }
-// )
-// console.log("2")
+//Async... non blocking
+console.log("1")
+const result = fs.readFile("contacts.txt", "utf-8", 
+    (err,result) => {
+        console.log(result)
+    }
+)
+console.log("2")
 
 // Async Non-blocking
 // fs.writeFile("./test.txt","Hello World",

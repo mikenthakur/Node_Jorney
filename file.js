@@ -1,5 +1,7 @@
 const fs = require("fs")
-const os = re
+const os = require("os")
+
+console.log(os.cpus().length);
 
 // Sync... Blocking
 // fs.writeFileSync("./test.txt","Hey There")
@@ -10,13 +12,13 @@ const os = re
 // console.log("2")
 
 // Async... non blocking
-console.log("1")
-const result = fs.readFile("contacts.txt", "utf-8", 
-    (err,result) => {
-        console.log(result)
-    }
-)
-console.log("2")
+// console.log("1")
+// const result = fs.readFile("contacts.txt", "utf-8", 
+//     (err,result) => {
+//         console.log(result)
+//     }
+// )
+// console.log("2")
 
 // Async Non-blocking
 // fs.writeFile("./test.txt","Hello World",

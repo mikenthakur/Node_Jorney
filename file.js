@@ -3,8 +3,13 @@ const fs = require("fs")
 // Sync... Blocking
 // fs.writeFileSync("./test.txt","Hey There")
 
-const result = fs.readFileSync("contacts.txt", "utf-8")
+console.log("1")
+const result = fs.readFileSync("contacts.txt","utf-8")
 console.log(result)
+console.log("2")
+
+
+
 
 
 // Async Non-blocking

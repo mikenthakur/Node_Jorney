@@ -1,13 +1,16 @@
 const fs = require("fs")
 
 // Sync... Blocking
-fs.writeFileSync("./test.txt","Hey There")
+// fs.writeFileSync("./test.txt","Hey There")
+
+const result = fs.readFileSync("contacts.txt", "utf-8")
+console.log(result)
 
 
 // Async Non-blocking
-fs.writeFile("./test.txt","Hello World",
-    (err) => {}
-)
+// fs.writeFile("./test.txt","Hello World",
+   // (err) => {}
+// )
 
 // const result = fs.readFileSync("./contacts.txt", "utf-8");
 // console.log(result);
@@ -23,13 +26,13 @@ fs.writeFile("./test.txt","Hello World",
 // )
 
 
-fs.appendFileSync("./test.txt", `${Date.now()} Hey There\n`)
+// fs.appendFileSync("./test.txt", `${Date.now()} Hey There\n`)
 
 // fs.cpSync("./test.txt", "./copy.txt");
 
 // fs.unlinkSync("./copy.txt")
 
-console.log(fs.statSync("./test.txt"))
+// console.log(fs.statSync("./test.txt"))
 
 //fs.mkdirSync('my-docs/ ', {})
 
